@@ -16,7 +16,8 @@
 * VS Code
 
 ## Code example
-```def spin_words(sentence):
+```
+def spin_words(sentence):
     words = sentence.split()
     for i in range(len(words)):
         if len(words[i]) >= 5:
