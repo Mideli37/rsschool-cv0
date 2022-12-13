@@ -5,87 +5,93 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
   <header>
-    <nav>
-      <ul>
-        <li>About me</li>
-        <li>Skills</li>
-        <li>Code</li>
-        <li>Projects</li>
-        <li>Education</li>
+    <nav id="navigation">
+      <ul id="menu">
+        <li><a href="#about-me">About me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#code">Code</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <leftcolumn>
-      <h1>Anastasiia Muzipova</h1>
-      <section>
-        <h2>Contacts</h2>
-        <ul>
-          <li>Location: Odesa, Ukraine</li>
-          <li>Email: muzipovanastia@gmail.com
-          <li>Discord: Mideli#7998</li>
-          <li>Github: <a href="https://github.com/Mideli37">@Mideli37</a></li>
-        </ul>
-      </section>
-      <section>
-        <h2>Languages</h2>
-        <ul>
-          <li>Ukrainian - native speaker</li>
-          <li>English - intermediate</li>
-          <li>Polish - basic</li>
-          <li>Russian - fluent</li>
-        </ul>
-      </section>
-    </leftcolumn>
-    <section>
-      <h2>About me</h2>
-      <p>Have a good communication skills, a very positive, proactive, responsible, and flexible person. My goal is to
-        get new useful knowledge and skills in the field of front-end development.</p>
-    </section>
-    <section>
-      <h2>Skills</h2>
-      <ul>
-        <li>Python</li>
-        <li>MySQL</li>
-        <li>HTML/CSS</li>
-        <li>Git, GitHub</li>
-        <li>VS Code</li>
-      </ul>
-    </section>
-    <section>
-      <h2>Code example</h2>
-      <code>
-        
+    <div class="two-columns">
+      <div class="left-column">
+        <h1>Anastasiia Muzipova</h1>
+        <section>
+          <h2>Contacts</h2>
+          <ul>
+            <li>Location: Odesa, Ukraine</li>
+            <li>Email: muzipovanastia@gmail.com
+            <li>Discord: Mideli#7998</li>
+            <li>Github: <a href="https://github.com/Mideli37">@Mideli37</a></li>
+          </ul>
+        </section>
+        <section>
+          <h2>Languages</h2>
+          <ul>
+            <li>Ukrainian - native speaker</li>
+            <li>English - intermediate</li>
+            <li>Polish - basic</li>
+            <li>Russian - fluent</li>
+          </ul>
+        </section>
+      </div>
+      <div class="right-column">
+        <section>
+          <h2 id="about-me">About me</h2>
+          <p>Have a good communication skills, a very positive, proactive, responsible, and flexible person. My goal is
+            to
+            get new useful knowledge and skills in the field of front-end development.</p>
+        </section>
+        <section>
+          <h2 id="skills">Skills</h2>
+          <ul>
+            <li>Python</li>
+            <li>MySQL</li>
+            <li>HTML/CSS</li>
+            <li>Git, GitHub</li>
+            <li>VS Code</li>
+          </ul>
+        </section>
+        <section>
+          <h2 id="code">Code example</h2>
+          <pre>
+            <code>
   def spin_words(sentence):
     words = sentence.split()
     for i in range(len(words)):
       if len(words[i]) >= 5:
         words[i] = words[i][::-1]
     return " ".join(words)
-        
       </code>
-    </section>
-    <section>
-      <h2>Projects</h2>
-      <a href="https://mideli37.github.io/rsschool-cv/">CV</a>
-      <p>And more to come!</p>
-    </section>
-    <section>
-      <h2>Education</h2>
-      <ul>
-        <li>University<ul>
-            <li>Kyiv Medical University, Medical faculty (in progress)</li>
+        </pre>
+        </section>
+        <section>
+          <h2 id="projects">Projects</h2>
+          <a href="https://mideli37.github.io/rsschool-cv/">CV</a>
+          <p>And more to come!</p>
+        </section>
+        <section>
+          <h2 id="education">Education</h2>
+          <ul>
+            <li>University<ul>
+                <li>Kyiv Medical University, Medical faculty (in progress)</li>
+              </ul>
+            </li>
+            <li>Courses<ul>
+                <li>RS Schools Course «JavaScript/Front-end. Stage0» (in progress)</li>
+              </ul>
+            </li>
           </ul>
-        </li>
-        <li>Courses<ul>
-            <li>RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)</li>
-          </ul>
-        </li>
-      </ul>
-    </section>
+        </section>
+      </div>
+    </div>
   </main>
   <footer>
     <a href="https://github.com/Mideli37" target="_blank">
@@ -95,7 +101,7 @@
     <a href="https://rs.school/js/" target="_blank">
       <image src="" alt="RSSchoolLogo">
     </a>
-    <image />
+
   </footer>
 </body>
 </html>
