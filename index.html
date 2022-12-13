@@ -9,19 +9,25 @@
 <body>
   <header>
     <nav>
-
+      <ul>
+        <li>About me</li>
+        <li>Skills</li>
+        <li>Code</li>
+        <li>Projects</li>
+        <li>Education</li>
+      </ul>
     </nav>
   </header>
   <main>
-    <sidebar>
+    <leftcolumn>
       <h1>Anastasiia Muzipova</h1>
       <section>
         <h2>Contacts</h2>
         <ul>
           <li>Location: Odesa, Ukraine</li>
-          <li>Email: <a href="">muzipovanastia@gmail.com</a></li>
+          <li>Email: muzipovanastia@gmail.com
           <li>Discord: Mideli#7998</li>
-          <li>Github: <a href="">@Mideli37</a></li>
+          <li>Github: <a href="https://github.com/Mideli37">@Mideli37</a></li>
         </ul>
       </section>
       <section>
@@ -33,7 +39,7 @@
           <li>Russian - fluent</li>
         </ul>
       </section>
-    </sidebar>
+    </leftcolumn>
     <section>
       <h2>About me</h2>
       <p>Have a good communication skills, a very positive, proactive, responsible, and flexible person. My goal is to
@@ -51,10 +57,20 @@
     </section>
     <section>
       <h2>Code example</h2>
+      <code>
+        
+  def spin_words(sentence):
+    words = sentence.split()
+    for i in range(len(words)):
+      if len(words[i]) >= 5:
+        words[i] = words[i][::-1]
+    return " ".join(words)
+        
+      </code>
     </section>
     <section>
       <h2>Projects</h2>
-      <a href="">CV</a>
+      <a href="https://mideli37.github.io/rsschool-cv/">CV</a>
       <p>And more to come!</p>
     </section>
     <section>
@@ -72,9 +88,14 @@
     </section>
   </main>
   <footer>
-    <image src="" alt="GitHubImage" href="">
-      <p>2022</p>
-      <image src="" alt="RSSchoolLogo" href="">
+    <a href="https://github.com/Mideli37" target="_blank">
+      <image src="" alt="GitHubImage">
+    </a>
+    <p>2022</p>
+    <a href="https://rs.school/js/" target="_blank">
+      <image src="" alt="RSSchoolLogo">
+    </a>
+    <image />
   </footer>
 </body>
 </html>
